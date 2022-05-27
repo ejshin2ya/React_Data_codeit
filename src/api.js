@@ -1,9 +1,5 @@
-export async function getReviews({
-  order = "createdAt",
-  offset = 0,
-  limit = 6,
-}) {
-  const query = `order=${order}&offset=${offset}&limit=${limit}`;
+export async function getReviews(order = "createdAt") {
+  const query = `order=${order}`;
   const response = await fetch(
     `https://learn.codeit.kr/1636/film-reviews?${query}`
   );
