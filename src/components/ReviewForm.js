@@ -33,7 +33,7 @@ function ReviewForm() {
       <FileInput
         name="imgFile"
         value={values.imgFile}
-        onChange={handleInputChange}
+        onChange={handleChange}
       />
       <input name="title" value={values.title} onChange={handleInputChange} />
       <input
