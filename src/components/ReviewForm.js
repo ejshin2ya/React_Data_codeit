@@ -1,6 +1,7 @@
 import { isValidInputTimeValue } from "@testing-library/user-event/dist/utils";
 import { useState } from "react";
 import FileInput from "./FileInput";
+import RatingInput from "./RatingInput";
 import "./ReviewForm.css";
 
 function ReviewForm() {
@@ -36,11 +37,11 @@ function ReviewForm() {
         onChange={handleChange}
       />
       <input name="title" value={values.title} onChange={handleInputChange} />
-      <input
+      <RatingInput
         type="number"
         name="rating"
         value={values.rating}
-        onChange={handleInputChange}
+        onChange={handleChange}
       />
       <textarea
         name="content"
